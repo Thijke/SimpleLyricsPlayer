@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SimpleLyricsPlayer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">SimpleLyricsPlayer</h1>
+
+    <div class="player">
+      <select id="track-select" aria-label="Selecteer nummer">
+        <option value="ma3lish">Ma3lish</option>
+        <option value="poweroverme">Power Over Me</option>
+        <option value="jeverdientbeter">Je verdient beter</option>
+        <option value="buckethat">Bucket Hat</option>
+        <option value="mulala">Mulala</option>
+      </select>
+
+      <label for="color-picker" class="color-label">Eigen kleurtje?</label>
+      <input type="color" id="color-picker" value="#0f0" />
+
+      <audio id="audio" preload="metadata"></audio>
+
+      <div class="controls">
+        <button id="play-pause" aria-label="Speel/Pauzeer">▶️</button>
+        <div class="time-info">
+          <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+        </div>
+      </div>
+
+      <div class="progress-container" id="progress-container">
+        <div class="progress" id="progress"></div>
+        <div class="progress-handle" id="progress-handle"></div>
+      </div>
+
+      <div class="lyrics-container" id="lyrics-container">
+        <div id="lyrics-prev" class="lyrics small"></div>
+        <div id="lyrics-current" class="lyrics glow"></div>
+        <div id="lyrics-next" class="lyrics small"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
