@@ -4,6 +4,8 @@
 Een stijlvolle, simpele website om mp3’s met bijbehorende gesynchroniseerde lyrics (.lrc) af te spelen.  
 Met een progress bar, kleurenkiezer en vloeiende lyrics animaties.
 
+Hier kan je m werkend zien: https://thijke.github.io/SimpleLyricsPlayer/
+
 ---
 
 
